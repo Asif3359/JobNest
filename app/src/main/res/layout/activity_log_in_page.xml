@@ -246,8 +246,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:src="@drawable/pipe__1_" />
-
+            android:src="@drawable/pipe__1_"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="140dp"
