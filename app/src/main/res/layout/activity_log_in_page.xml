@@ -42,7 +42,7 @@
 
     <!-- Sign In Title -->
     <TextView
-        android:id="@+id/signInTitle"
+        android:id="@+id/CreateIAccTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -67,7 +67,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signInTitle" />
+        app:layout_constraintTop_toBottomOf="@id/CreateIAccTitle" />
 
     <!-- Email Input -->
     <androidx.cardview.widget.CardView

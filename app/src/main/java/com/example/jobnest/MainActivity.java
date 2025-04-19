@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static int SPLASH_SCREEN = 5000;
     //Variables
-    Animation topAnim,middleAnim,bottomAnim1,bottomAnim2,bottomAnim3;
+    Animation topAnim,bottomAnim1,bottomAnim2,bottomAnim3;
     ImageView image1, image2;
     TextView text1,text2,text3;
 
