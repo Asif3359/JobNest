@@ -23,6 +23,12 @@ public class LogInPage extends AppCompatActivity {
             return insets;
         });
 
+        Button logInButton = findViewById(R.id.loginButton);
+        logInButton.setOnClickListener(v -> {
+            Intent intent = new Intent(LogInPage.this, seekerdashboard.class);
+            startActivity(intent);
+        });
+
         Button createAccountButton = findViewById(R.id.createAccountButton);
         createAccountButton.setOnClickListener(v -> {
             // Example: Navigate to a "SignUpPage" activity

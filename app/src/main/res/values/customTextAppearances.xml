@@ -1,0 +1,5 @@
+<resources>
+    <style name="CustomTextAppearance">
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+</resources>

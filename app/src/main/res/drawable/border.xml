@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="#FFFFFF"/>  <!-- Background color of the TextView -->
+    <stroke
+        android:color="#800080"
+        android:width="2dp"/>    <!-- Border width -->
+    <corners android:radius="20dp"/>  <!-- Rounded corners (optional) -->
+    <padding
+        android:left="10dp"
+        android:top="5dp"
+        android:right="10dp"
+        android:bottom="5dp"/>  <!-- Padding for the text inside the border -->
+</shape>

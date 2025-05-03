@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@color/white"
+    tools:context=".seekerdashboard"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="414dp"
+        android:layout_height="264dp"
+        android:layout_marginStart="-37dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="-37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pagebackground" />
+
+    <TextView
+        android:id="@+id/dsh_brd_grting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="163dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Good Morning, "
+        android:textAlignment="viewStart"
+        android:textColor="#FBFAFA"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/seeker_dsh_brd_grting_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="131dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Md. Eftear Islam"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="80dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.487"
+        app:shapeAppearanceOverlay="@style/circular"
+        app:srcCompat="@drawable/alvee2_photoroom"
+        app:strokeColor="#FFFF"
+        app:strokeWidth="5dp" />
+
+    <!-- MaterialCardView wrapper for the SearchView -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- SearchView inside MaterialCardView -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/search_field_bg"
+            android:queryHint="Search Job here..."
+            android:textAppearance="@style/CustomTextAppearance" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="179dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="179dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/background__1_" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="175dp"
+        android:layout_height="197dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:srcCompat="@drawable/mask_group" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:srcCompat="@drawable/mask_group__3_" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="43dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:srcCompat="@drawable/vector" />
+
+    <TextView
+        android:id="@+id/no_of_applied_job"
+        android:layout_width="89dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="132dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="29"
+        android:textColor="#FBFBFB"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Job Applied"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/no_of_interview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="112dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="21"
+        android:textColor="#FBFBFB"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="141dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Interviews"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Category"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/category1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Category1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/category2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Category1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+    <TextView
+        android:id="@+id/categoryMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="More ..."
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Recomended Job"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category1" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:scrollbarThumbHorizontal="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="310dp"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/companylogo" />
+
+                <TextView
+                    android:id="@+id/rcmnd_job_title1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="110dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Software Engineer"
+                    android:textColor="#5C44F1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/rcmnd_location1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Dhaka, Bangladesh"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="55dp"
+                    app:srcCompat="@drawable/coins_1" />
+
+                <TextView
+                    android:id="@+id/rcmnd_job_tk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="$500-$1,000"
+                    android:textColor="#40189D"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="310dp"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/companylogo" />
+
+                <TextView
+                    android:id="@+id/rcmnd_job_tatile2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Software Engineer"
+                    android:textColor="#5C44F1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rcmnd_location2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Dhaka, Bangladesh"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/rcmnd_job_img_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="55dp"
+                    app:srcCompat="@drawable/coins_1" />
+
+                <TextView
+                    android:id="@+id/rcmnd_job_tk2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="$500-$1,000"
+                    android:textColor="#40189D"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="310dp"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/companylogo" />
+
+                <TextView
+                    android:id="@+id/rcmnd_job_tatile3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Software Engineer"
+                    android:textColor="#5C44F1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rcmnd_location3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Dhaka, Bangladesh"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/rcmnd_job_img_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="55dp"
+                    app:srcCompat="@drawable/coins_1" />
+
+                <TextView
+                    android:id="@+id/rcmnd_job_tk3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="$500-$1,000"
+                    android:textColor="#40189D"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
